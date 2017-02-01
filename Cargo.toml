@@ -1,0 +1,22 @@
+[package]
+name = "plios_kernel"
+version = "0.1.0"
+authors = ["Saad Nasser <SdNssr@users.noreply.github.com>"]
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+rlibc = "0.1.4"
+spin = "0.4"
+multiboot2 = "0.3.1"
+
+[dependencies.x86]
+version = "0.8.1"
+default-features = false
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

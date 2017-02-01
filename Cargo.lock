@@ -1,0 +1,60 @@
+[root]
+name = "plios_kernel"
+version = "0.1.0"
+dependencies = [
+ "multiboot2 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rlibc 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "spin 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "x86 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "bitflags"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "bitflags"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "multiboot2"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "bitflags 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "raw-cpuid"
+version = "2.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "rlibc"
+version = "0.1.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "spin"
+version = "0.4.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "x86"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "bitflags 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "raw-cpuid 2.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum bitflags 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "8dead7461c1127cf637931a1e50934eb6eee8bff2f74433ac7909e9afcee04a3"
+"checksum bitflags 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)" = "aad18937a628ec6abcd26d1489012cc0e18c21798210f491af69ded9b881106d"
+"checksum multiboot2 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)" = "88aedb52b616203e987bf9cd0c2779e281eefcfa23bd23dc9734f2dcf54079ad"
+"checksum raw-cpuid 2.0.1 (registry+https://github.com/rust-lang/crates.io-index)" = "7bc8e963398e6244e1d51c42dd68394f273d39ed8afc9238b74f56041b23dbd3"
+"checksum rlibc 0.1.5 (registry+https://github.com/rust-lang/crates.io-index)" = "4f725fa0be00ed4a869c61f1adb156b629bb6c8d97f2ee4d0644bba1ce33b04b"
+"checksum spin 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)" = "1d16a26e2b789f86aabddbe91cb82ee2e822beb8a59840d631941b625ef77e53"
+"checksum x86 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)" = "ada1976e1004a0b5999beb7403541af96637e8f439b97d86c8c9abef2e0e7d19"
